@@ -3,8 +3,8 @@ from inventory_report.product import Product
 
 class Inventory:
     # pass
-    def __init__(self, data: list[Product]) -> None:
-        if data is not None:
+    def __init__(self, data: list[Product] or None = None):
+        if data is None:
             return self.data
         else:
             self.data = []
