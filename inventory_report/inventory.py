@@ -1,9 +1,10 @@
+from typing import Optional
 from inventory_report.product import Product
 
 
 class Inventory:
-    # pass
-    def __init__(self, data: list[Product] or None = None):
+    # corrigindo erro do test_init_data_is_an_optional_list_of_products
+    def __init__(self, data: Optional[list[Product]] or None = None):
         if data is None:
             data = []
         self._data = data
