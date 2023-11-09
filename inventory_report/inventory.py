@@ -9,10 +9,10 @@ class Inventory:
             data = []
         self._data = data
 
-    def add_data(self, data: list[Product]) -> None:
-        for product in data:
-            self._data.append(product)
-
     @property
     def data(self) -> list[Product]:
         return self._data
+
+    def add_data(self, data: list[Product]) -> None:
+        for product in data:
+            self._data.append(product)
